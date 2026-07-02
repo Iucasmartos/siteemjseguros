@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-label="EMJ Seguros">
+  <title>EMJ Seguros</title>
+
+  <!-- C�rculo azul-marinho � fundo da logo -->
+  <circle cx="100" cy="100" r="96" fill="#002060"/>
+
+  <!-- Seta principal (forma de divisa/chevron apontando para cima) -->
+  <polygon points="100,18 148,90 118,90 118,158 82,158 82,90 52,90" fill="white"/>
+
+  <!-- Letra E � lado esquerdo -->
+  <text x="30" y="116"
+    font-family="Arial Black, Arial, sans-serif"
+    font-size="48" font-weight="900"
+    fill="white" text-anchor="middle" dominant-baseline="middle">E</text>
+
+  <!-- Letra M � topo -->
+  <text x="100" y="34"
+    font-family="Arial Black, Arial, sans-serif"
+    font-size="36" font-weight="900"
+    fill="white" text-anchor="middle" dominant-baseline="middle">M</text>
+
+  <!-- Letra J � lado direito -->
+  <text x="170" y="116"
+    font-family="Arial Black, Arial, sans-serif"
+    font-size="48" font-weight="900"
+    fill="white" text-anchor="middle" dominant-baseline="middle">J</text>
+
+  <!-- Texto "Seguros" vertical sobre o corpo da seta -->
+  <text x="100" y="128"
+    font-family="Arial, Helvetica, sans-serif"
+    font-size="13" font-weight="700"
+    fill="#002060" text-anchor="middle"
+    letter-spacing="1.2"
+    transform="rotate(-90, 100, 124)">SEGUROS</text>
+
+  <!-- S�mbolo � -->
+  <text x="175" y="170"
+    font-family="Arial, sans-serif"
+    font-size="14" font-weight="400"
+    fill="rgba(255,255,255,0.65)" text-anchor="middle">�</text>
+</svg>
