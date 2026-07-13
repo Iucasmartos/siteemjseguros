@@ -201,6 +201,18 @@
     });
   }
 
+  /* ── WhatsApp conversion tracking ── */
+  function bindWhatsAppConversion(el, href) {
+    el.href = href;
+    el.setAttribute('target', '_blank');
+    el.setAttribute('rel', 'noopener noreferrer');
+    el.onclick = function () {
+      return gtagSendEvent(href);
+    };
+  }
+
+  const wa = `https://wa.me/${CONFIG.whatsappNumber}`;
+
   /* ── Modal de Sucesso ── */
   const modal     = document.getElementById('success-modal');
   const modalNome = document.getElementById('modal-nome');
@@ -214,9 +226,7 @@
     const waBtn = modal.querySelector('.modal-wa');
     if (waBtn) {
       const msg = waBtn.getAttribute('data-whatsapp') || CONFIG.whatsappMessage;
-      waBtn.href = `https://wa.me/${CONFIG.whatsappNumber}?text=${encodeURIComponent(msg)}`;
-      waBtn.setAttribute('target', '_blank');
-      waBtn.setAttribute('rel', 'noopener noreferrer');
+      bindWhatsAppConversion(waBtn, `${wa}?text=${encodeURIComponent(msg)}`);
     }
   }
 
@@ -233,19 +243,22 @@
     document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeModal(); });
   }
 
-  /* ── WhatsApp links ── */
-  const wa = `https://wa.me/${CONFIG.whatsappNumber}`;
   document.querySelectorAll('[data-whatsapp]').forEach((el) => {
     const msg = el.getAttribute('data-whatsapp') || CONFIG.whatsappMessage;
-    el.href   = `${wa}?text=${encodeURIComponent(msg)}`;
-    el.setAttribute('target', '_blank');
-    el.setAttribute('rel', 'noopener noreferrer');
+    bindWhatsAppConversion(el, `${wa}?text=${encodeURIComponent(msg)}`);
   });
   const floatBtn = document.querySelector('.whatsapp-float');
   if (floatBtn) {
-    floatBtn.href = `${wa}?text=${encodeURIComponent(CONFIG.whatsappMessage)}`;
-    floatBtn.setAttribute('target', '_blank');
-    floatBtn.setAttribute('rel', 'noopener noreferrer');
+    bindWhatsAppConversion(floatBtn, `${wa}?text=${encodeURIComponent(CONFIG.whatsappMessage)}`);
   }
+
+  document.querySelectorAll('a[href*="porto.vc"]').forEach((el) => {
+    const href = el.getAttribute('href');
+    el.setAttribute('target', '_blank');
+    el.setAttribute('rel', 'noopener noreferrer');
+    el.onclick = function () {
+      return gtagSendEvent(href);
+    };
+  });
 
 })();

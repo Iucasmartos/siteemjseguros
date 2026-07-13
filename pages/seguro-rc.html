@@ -6,6 +6,7 @@
   <meta name="description" content="RC Empresarial EMJ Seguros — proteção jurídica e financeira contra danos a terceiros.">
   <title>Responsabilidade Civil Empresarial | EMJ Seguros</title>
   <link rel="stylesheet" href="../style.css">
+  <link rel="icon" href="../assets/logo-emj.png" type="image/png">
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-F6EQVCPVZE"></script>
   <script>
@@ -14,6 +15,20 @@
     gtag('js', new Date());
 
     gtag('config', 'G-F6EQVCPVZE');
+    gtag('config', 'AW-740330480');
+
+    function gtagSendEvent(url) {
+      var callback = function () {
+        if (typeof url !== 'undefined') {
+          window.open(url, '_blank', 'noopener,noreferrer');
+        }
+      };
+      gtag('event', 'conversion', {
+        'send_to': 'AW-740330480',
+        'event_callback': callback
+      });
+      return false;
+    }
   </script>
 </head>
 <body>
@@ -27,19 +42,100 @@
     <a href="../index.html#contato" class="btn btn-primary btn-sm header-cta">Solicitar Cotação <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
     <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false"><span></span><span></span><span></span></button>
   </div></header>
+
   <main>
-    <section class="page-hero"><div class="container page-hero-content">
-      <nav class="breadcrumb"><a href="../index.html">Início</a> / <span>Responsabilidade Civil Empresarial</span></nav>
-      <div class="page-hero-icon"><svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg></div>
-      <h1>Responsabilidade Civil Empresarial</h1>
-      <p>Proteja sua empresa contra processos e indenizações por danos causados a terceiros.</p>
-    </div></section>
-    <section class="page-content"><div class="container content-grid">
-      <article class="content-main">
-        <h2>Sobre este produto</h2>
-        <p>O RC cobre custos de defesa e indenizações, preservando o patrimônio da empresa.</p>
-        <h2>Coberturas principais</h2>
-        <ul class="coverage-list">
+    <!-- ══ HERO DE CONVERSÃO (above the fold) ══ -->
+    <section class="lp-hero">
+      <div class="lp-hero-bg" aria-hidden="true">
+        <img src="../assets/prod-rc.jpg" alt="" width="1600" height="1000" loading="eager" fetchpriority="high">
+      </div>
+      <div class="container">
+       <div class="lp-hero-content">
+        <nav class="lp-breadcrumb" aria-label="Você está aqui"><a href="../index.html">Início</a> / <span>Responsabilidade Civil Empresarial</span></nav>
+
+        <div class="lp-badge">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          Corretora parceira Porto Seguro · +10 anos protegendo negócios
+        </div>
+
+        <h1>Blinde sua empresa contra processos e indenizações a terceiros — <span>cotação grátis em até 2h</span></h1>
+
+        <p class="lp-hero-sub">
+          A Responsabilidade Civil Empresarial cobre custos de defesa e indenizações, preservando o patrimônio do seu negócio. Sem burocracia.
+        </p>
+
+        <div class="lp-actions">
+          <a href="../index.html#contato" class="btn btn-primary btn-cta-xl">
+            Quero Minha Cotação Grátis
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <!-- TODO: confirmar se este botão será wa.me direto ou JS tracking -->
+          <a href="#" class="btn btn-whatsapp btn-lg" data-whatsapp="Olá! Gostaria de cotar RC Empresarial.">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            Cotação via WhatsApp
+          </a>
+        </div>
+
+        <p class="lp-cta-micro">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          Grátis · Sem compromisso · Resposta em até 2h úteis
+        </p>
+       </div>
+      </div>
+    </section>
+
+    <!-- ══ POR QUE CONTRATAR ══ -->
+    <section class="lp-section lp-section--white">
+      <div class="container">
+        <header class="lp-section-head reveal">
+          <span class="section-tag">Por que a EMJ</span>
+          <h2 class="section-title">Tranquilidade jurídica para tocar o seu negócio</h2>
+          <p class="section-subtitle">Somos corretora — trabalhamos por você, não pela seguradora. Analisamos o risco da sua atividade e desenhamos a proteção certa.</p>
+        </header>
+        <div class="diff-grid reveal">
+          <article class="diff-item">
+            <div class="diff-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+            <h3 class="diff-title">Resposta em até 2h úteis</h3>
+            <p class="diff-text">Você não fica esperando. Envie os dados e receba as melhores propostas comparadas em poucas horas.</p>
+          </article>
+          <article class="diff-item">
+            <div class="diff-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg></div>
+            <h3 class="diff-title">Seguradoras de confiança</h3>
+            <p class="diff-text">Parceria com Porto Seguro, Bradesco, Allianz, Tokio Marine e outras líderes. As melhores condições em um só lugar.</p>
+          </article>
+          <article class="diff-item">
+            <div class="diff-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+            <h3 class="diff-title">Atendimento humanizado</h3>
+            <p class="diff-text">Gente de verdade, entendendo a realidade da sua empresa e indicando a cobertura certa — sem enrolação.</p>
+          </article>
+          <article class="diff-item">
+            <div class="diff-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg></div>
+            <h3 class="diff-title">Economia inteligente</h3>
+            <p class="diff-text">Negociamos condições comerciais para você ter a proteção certa pelo melhor custo-benefício.</p>
+          </article>
+          <article class="diff-item">
+            <div class="diff-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"/></svg></div>
+            <h3 class="diff-title">Suporte no sinistro</h3>
+            <p class="diff-text">Se surgir uma ação de terceiros, você não lida sozinho com a seguradora. A gente acompanha cada etapa.</p>
+          </article>
+          <article class="diff-item">
+            <div class="diff-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg></div>
+            <h3 class="diff-title">+10 anos de experiência</h3>
+            <p class="diff-text">Mais de uma década protegendo empresas com transparência total em coberturas e valores.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ COBERTURAS PRINCIPAIS ══ -->
+    <section class="lp-section">
+      <div class="container">
+        <header class="lp-section-head reveal">
+          <span class="section-tag">Coberturas</span>
+          <h2 class="section-title">O que a RC Empresarial cobre</h2>
+          <p class="section-subtitle">O RC cobre custos de defesa e indenizações, preservando o patrimônio da empresa. Estas são as coberturas mais contratadas.</p>
+        </header>
+        <ul class="coverage-list coverage-list--2col reveal">
           <li class="coverage-item"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg><div><strong>Danos corporais a terceiros</strong><span>Indenizações por lesões causadas por atividades da empresa.</span></div></li>
           <li class="coverage-item"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg><div><strong>Danos materiais a terceiros</strong><span>Cobertura para destruição de bens de terceiros.</span></div></li>
           <li class="coverage-item"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg><div><strong>Danos morais</strong><span>Proteção contra ações por danos morais causados a terceiros.</span></div></li>
@@ -47,16 +143,89 @@
           <li class="coverage-item"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg><div><strong>RC Profissional</strong><span>Cobertura específica para profissionais liberais.</span></div></li>
           <li class="coverage-item"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg><div><strong>RC Produtos</strong><span>Proteção para danos causados por produtos fabricados ou vendidos.</span></div></li>
         </ul>
-      </article>
-      <aside class="sidebar-card">
-        <h3>Solicitar Cotação</h3>
-        <p>Cotação gratuita, sem compromisso. Resposta em até 2 horas úteis.</p>
-        <a href="../index.html#contato" class="btn btn-primary btn-lg">Solicitar Cotação</a>
-        <a href="#" class="btn btn-whatsapp" data-whatsapp="Olá! Gostaria de cotar RC Empresarial.">Falar no WhatsApp</a>
-      </aside>
-    </div></section>
+      </div>
+    </section>
+
+    <!-- ══ CTA INTERMEDIÁRIO ══ -->
+    <section class="lp-section lp-section--white">
+      <div class="container">
+        <div class="lp-cta-band reveal">
+          <h2>Pronto para proteger sua empresa de processos?</h2>
+          <p>Cotação gratuita e sem compromisso. Um consultor EMJ Seguros compara as melhores opções e responde em até 2h úteis.</p>
+          <div class="lp-actions">
+            <a href="../index.html#contato" class="btn btn-primary btn-cta-xl">
+              Quero Minha Cotação Grátis
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <!-- TODO: confirmar se este botão será wa.me direto ou JS tracking -->
+            <a href="#" class="btn btn-whatsapp btn-lg" data-whatsapp="Olá! Gostaria de cotar RC Empresarial.">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              Cotação via WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ CONFIANÇA / PROVA SOCIAL ══ -->
+    <section class="lp-section">
+      <div class="container">
+        <header class="lp-section-head reveal">
+          <span class="section-tag">Confiança de quem já é cliente</span>
+          <h2 class="section-title">Empresas e clientes que confiam na EMJ</h2>
+          <p class="section-subtitle">A confiança dos nossos clientes é o nosso maior patrimônio.</p>
+        </header>
+        <div class="lp-trust-grid reveal">
+          <blockquote class="testimonial-card">
+            <div class="testimonial-stars" aria-label="5 estrelas">★★★★★</div>
+            <p class="testimonial-text">"Contratei mais de um seguro pela mesma corretora. Atendimento unificado, preços competitivos e uma equipe que realmente se importa."</p>
+            <footer class="testimonial-author"><strong>Carlos Eduardo Silva</strong><span>Cliente EMJ Seguros · Rio de Janeiro, RJ</span></footer>
+          </blockquote>
+          <blockquote class="testimonial-card">
+            <div class="testimonial-stars" aria-label="5 estrelas">★★★★★</div>
+            <p class="testimonial-text">"Fiquei impressionada com a agilidade. Em menos de 2 horas recebi propostas comparativas. O atendimento foi humanizado do início ao fim."</p>
+            <footer class="testimonial-author"><strong>Mariana Costa</strong><span>Cliente EMJ Seguros · São Paulo, SP</span></footer>
+          </blockquote>
+        </div>
+        <div class="lp-partners reveal" aria-label="Seguradoras parceiras">
+          <div class="partner-logo"><img src="../assets/partners/porto-seguro.png" alt="Porto Seguro" loading="lazy"></div>
+          <div class="partner-logo"><img src="../assets/partners/bradesco.png" alt="Bradesco Seguros" loading="lazy"></div>
+          <div class="partner-logo"><img src="../assets/partners/allianz.png" alt="Allianz Seguros" loading="lazy"></div>
+          <div class="partner-logo"><img src="../assets/partners/tokio-marine.png" alt="Tokio Marine" loading="lazy"></div>
+          <div class="partner-logo"><img src="../assets/partners/azul.png" alt="Azul Seguros" loading="lazy"></div>
+        </div>
+        <p class="lp-partners-note">E outras seguradoras parceiras para proteger a sua empresa com as melhores condições.</p>
+      </div>
+    </section>
+
+    <!-- ══ CTA FINAL ══ -->
+    <section class="lp-section lp-section--white">
+      <div class="container">
+        <div class="lp-cta-band reveal">
+          <h2>Um processo não pode parar o seu negócio</h2>
+          <p>Ações de terceiros podem custar caro. Faça agora sua cotação gratuita e mantenha o patrimônio da sua empresa protegido.</p>
+          <div class="lp-actions">
+            <a href="../index.html#contato" class="btn btn-primary btn-cta-xl">
+              Quero Minha Cotação Grátis
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <!-- TODO: confirmar se este botão será wa.me direto ou JS tracking -->
+            <a href="#" class="btn btn-whatsapp btn-lg" data-whatsapp="Olá! Gostaria de cotar RC Empresarial.">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              Cotação via WhatsApp
+            </a>
+          </div>
+          <p class="lp-cta-micro">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            100% gratuito · Sem compromisso · Resposta em até 2h úteis
+          </p>
+        </div>
+      </div>
+    </section>
   </main>
+
   <footer class="footer"><div class="container"><div class="footer-bottom"><p>© 2026 EMJ Seguros. Todos os direitos reservados.</p></div></div></footer>
+
   <a href="#" class="whatsapp-float" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
   <script src="../script.js"></script>
 </body>
