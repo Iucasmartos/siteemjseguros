@@ -1,6 +1,6 @@
 /**
  * EMJ Seguros — JavaScript Vanilla
- * Menu, scroll, contadores, carrossel de depoimentos, validação de formulário
+ * Menu, scroll, contadores, validação de formulário
  */
 (function () {
   'use strict';
@@ -8,7 +8,7 @@
   const CONFIG = {
     whatsappNumber: '5511999757778',
     whatsappMessage: 'Olá! Gostaria de solicitar uma cotação.',
-    // Cole aqui a URL do seu Google Apps Script após publicar como Web App:
+    // URL do Apps Script (google-apps-script/Code.gs) publicado como Web App:
     googleScriptURL: 'https://script.google.com/macros/s/AKfycbzuKdcsY5bvUjbt5OHPcmzsmZURzwDOxTfgRvhtbyyJYmLshN5l11M85tTIQYGIxGQS/exec',
   };
 
@@ -98,38 +98,6 @@
       entries.forEach((e) => { if (e.isIntersecting) { animateCounter(e.target); co.unobserve(e.target); } });
     }, { threshold: 0.5 });
     counters.forEach((c) => co.observe(c));
-  }
-
-  /* ── Testimonial Carousel ── */
-  const carousel = document.querySelector('.testimonial-carousel');
-  if (carousel) {
-    const track  = carousel.querySelector('.testimonial-track');
-    const slides = carousel.querySelectorAll('.testimonial-slide');
-    const dotsWrap = carousel.querySelector('.testimonial-dots');
-    let current = 0, timer;
-
-    slides.forEach((_, i) => {
-      const d = document.createElement('button');
-      d.className = `testimonial-dot${i === 0 ? ' active' : ''}`;
-      d.setAttribute('aria-label', `Depoimento ${i + 1}`);
-      d.addEventListener('click', () => goTo(i));
-      dotsWrap.appendChild(d);
-    });
-
-    const dots = dotsWrap.querySelectorAll('.testimonial-dot');
-
-    function goTo(i) {
-      current = i;
-      track.style.transform = `translateX(-${current * 100}%)`;
-      dots.forEach((d, j) => d.classList.toggle('active', j === current));
-    }
-
-    function startAutoplay() { timer = setInterval(() => goTo((current + 1) % slides.length), 5000); }
-    function stopAutoplay()  { clearInterval(timer); }
-
-    carousel.addEventListener('mouseenter', stopAutoplay);
-    carousel.addEventListener('mouseleave', startAutoplay);
-    startAutoplay();
   }
 
   /* ── Form Validation ── */
