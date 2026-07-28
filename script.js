@@ -169,12 +169,15 @@
     });
   }
 
-  /* ── WhatsApp conversion tracking ── */
+  /* ── WhatsApp conversion tracking (Google Ads + Meta Pixel) ── */
   function bindWhatsAppConversion(el, href) {
     el.href = href;
     el.setAttribute('target', '_blank');
     el.setAttribute('rel', 'noopener noreferrer');
     el.onclick = function () {
+      if (typeof fbq === 'function') {
+        fbq('track', 'Contact');
+      }
       return gtagSendEvent(href);
     };
   }
