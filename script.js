@@ -223,6 +223,7 @@
     bindWhatsAppConversion(floatBtn, `${wa}?text=${encodeURIComponent(CONFIG.whatsappMessage)}`);
   }
 
+  /* ── Links externos Porto (legado; sem uso atual no HTML) ── */
   document.querySelectorAll('a[href*="porto.vc"]').forEach((el) => {
     const href = el.getAttribute('href');
     el.setAttribute('target', '_blank');
